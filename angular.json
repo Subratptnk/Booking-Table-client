@@ -24,7 +24,8 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css"
             ],
             "scripts": []
           },
@@ -119,6 +120,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "Booking-Table-client"
+    }
+  },
+  "defaultProject": "Booking-Table-client",
+  "cli": {
+    "analytics": "7e6811fa-28a6-4e08-832e-71b5df677e31"
+  }
 }

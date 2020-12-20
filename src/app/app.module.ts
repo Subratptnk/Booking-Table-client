@@ -3,16 +3,26 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { TableListComponent } from './table-list/table-list.component';
+import { TableFormComponent } from './table-form/table-form.component';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { TableServiceService } from './table-service.service';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    TableListComponent,
+    TableFormComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
-  providers: [],
+  providers: [TableServiceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
